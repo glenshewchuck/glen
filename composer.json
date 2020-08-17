@@ -36,6 +36,8 @@
         "drupal/entity_usage": "^2.0@beta",
         "drupal/examples": "^3.0",
         "drupal/exif": "^2.2",
+        "drupal/field_group": "^3.1",
+        "drupal/focal_point": "^1.4",
         "drupal/module_filter": "^3.1",
         "drupal/paragraphs": "^1.12",
         "drupal/pathauto": "^1.8",

@@ -1,0 +1,28 @@
+uuid: 40c81b0e-de06-4898-9d8b-c61c3dc09a53
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_image_secondary
+    - media.type.photography
+    - paragraphs.paragraphs_type.photograph_before_and_after
+id: paragraph.photograph_before_and_after.field_image_secondary
+field_name: field_image_secondary
+entity_type: paragraph
+bundle: photograph_before_and_after
+label: 'Before Image'
+description: 'Original Image'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      photography: photography
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

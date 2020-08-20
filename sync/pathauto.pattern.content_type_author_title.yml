@@ -1,0 +1,22 @@
+uuid: 955febc6-09da-41b8-b5be-2e8465bb50b5
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: content_type_author_title
+label: content-type-author-title
+type: 'canonical_entities:node'
+pattern: '[node:content-type]/[node:author:account-name]/[node:title]'
+selection_criteria:
+  1f38a479-25a3-4ecd-99c2-c8085ea4ab47:
+    id: node_type
+    bundles:
+      story: story
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 1f38a479-25a3-4ecd-99c2-c8085ea4ab47
+selection_logic: and
+weight: -5
+relationships: {  }

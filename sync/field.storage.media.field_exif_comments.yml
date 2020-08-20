@@ -1,0 +1,20 @@
+uuid: 96f668a2-8c31-4b62-b2ea-8e78a6402cfa
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+    - text
+id: media.field_exif_comments
+field_name: field_exif_comments
+entity_type: media
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

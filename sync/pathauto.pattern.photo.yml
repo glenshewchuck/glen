@@ -1,0 +1,23 @@
+uuid: f4036729-0fc3-43b5-a632-a10d8473e0a6
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - media
+id: photo
+label: photo
+type: 'canonical_entities:media'
+pattern: 'photo/[media:uid:entity:account-name]/[media:created:date:custom:"Y"]/[media:name]'
+selection_criteria:
+  a447390c-6f2e-4858-afff-10fc4709d5ac:
+    id: 'entity_bundle:media'
+    bundles:
+      photography: photography
+    negate: false
+    context_mapping:
+      media: media
+    uuid: a447390c-6f2e-4858-afff-10fc4709d5ac
+selection_logic: and
+weight: -5
+relationships: {  }

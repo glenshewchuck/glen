@@ -1,0 +1,10 @@
+uuid: e1277953-ed99-496f-a1ac-3b682b13730c
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.only_image
+label: 'Only Image'
+targetEntityType: media
+cache: true

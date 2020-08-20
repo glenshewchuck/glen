@@ -1,0 +1,21 @@
+uuid: 905f698a-8a22-410f-9206-d2837ad1cde9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_exif_exposuretime
+    - media.type.photography
+  module:
+    - text
+id: media.photography.field_exif_exposuretime
+field_name: field_exif_exposuretime
+entity_type: media
+bundle: photography
+label: Exposure
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

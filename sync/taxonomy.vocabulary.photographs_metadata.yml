@@ -1,0 +1,8 @@
+uuid: 9e2e1d56-469b-482f-8b6a-597376b7dde9
+langcode: en
+status: true
+dependencies: {  }
+name: 'photographs metadata'
+vid: photographs_metadata
+description: 'information related to photographs'
+weight: 0

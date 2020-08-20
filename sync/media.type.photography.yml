@@ -1,0 +1,18 @@
+uuid: 01f6b4bf-d68a-4eb6-a4d2-6ae56622757b
+langcode: en
+status: true
+dependencies:
+  module:
+    - crop
+third_party_settings:
+  crop:
+    image_field: field_image
+id: photography
+label: Photography
+description: 'Use Photography for content where the photo is the main content. You still can have some other information related to the photo itself.'
+source: image
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_image
+field_map: {  }

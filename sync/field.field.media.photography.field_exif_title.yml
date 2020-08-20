@@ -1,0 +1,21 @@
+uuid: 26e4b832-98ea-4f12-aa31-21de5fadbf8e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_exif_title
+    - media.type.photography
+  module:
+    - text
+id: media.photography.field_exif_title
+field_name: field_exif_title
+entity_type: media
+bundle: photography
+label: 'Photo Title'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

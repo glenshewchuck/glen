@@ -1,0 +1,20 @@
+uuid: 36d07db9-233a-45f0-a409-4b55e6d77c60
+langcode: en
+status: true
+dependencies:
+  theme:
+    - chewch
+_core:
+  default_config_hash: ffxthelqQF8xcr4GTG4HlaNNsluiHftN0pujmQpW0bQ
+id: chewch_local_actions
+theme: chewch
+region: header
+weight: 20
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

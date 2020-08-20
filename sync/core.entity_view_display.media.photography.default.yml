@@ -1,0 +1,225 @@
+uuid: c035fbf5-f5f6-44b5-8b93-e7b2e0760e59
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.photography.field_exif_aperturefnumber
+    - field.field.media.photography.field_exif_author
+    - field.field.media.photography.field_exif_comments
+    - field.field.media.photography.field_exif_datetime
+    - field.field.media.photography.field_exif_exposuremode
+    - field.field.media.photography.field_exif_exposureprogram
+    - field.field.media.photography.field_exif_exposuretime
+    - field.field.media.photography.field_exif_flash
+    - field.field.media.photography.field_exif_focallength
+    - field.field.media.photography.field_exif_imagedescription
+    - field.field.media.photography.field_exif_isospeedratings
+    - field.field.media.photography.field_exif_keywords
+    - field.field.media.photography.field_exif_make
+    - field.field.media.photography.field_exif_model
+    - field.field.media.photography.field_exif_orientation
+    - field.field.media.photography.field_exif_scenecapturetype
+    - field.field.media.photography.field_exif_title
+    - field.field.media.photography.field_exif_whitebalance
+    - field.field.media.photography.field_image
+    - image.style.large
+    - media.type.photography
+  module:
+    - datetime
+    - field_group
+    - image
+    - text
+    - user
+third_party_settings:
+  field_group:
+    group_photo_information:
+      children:
+        - uid
+        - created
+        - field_exif_datetime
+        - field_exif_comments
+        - field_exif_imagedescription
+        - field_exif_title
+        - field_exif_make
+        - field_exif_aperturefnumber
+        - field_exif_exposuretime
+        - field_exif_focallength
+        - field_exif_flash
+        - field_exif_exposureprogram
+        - field_exif_exposuremode
+        - field_exif_whitebalance
+        - field_exif_scenecapturetype
+        - field_exif_orientation
+        - field_exif_author
+        - field_exif_model
+        - field_exif_isospeedratings
+      parent_name: ''
+      weight: 1
+      format_type: fieldset
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+      label: 'Photo Information'
+id: media.photography.default
+targetEntityType: media
+bundle: photography
+mode: default
+content:
+  created:
+    label: hidden
+    type: timestamp
+    weight: 3
+    region: content
+    settings:
+      date_format: medium
+      custom_date_format: ''
+      timezone: ''
+    third_party_settings: {  }
+  field_exif_aperturefnumber:
+    label: hidden
+    type: text_default
+    weight: 9
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_exif_author:
+    label: hidden
+    type: entity_reference_entity_id
+    weight: 19
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_exif_comments:
+    label: hidden
+    type: text_default
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_exif_datetime:
+    label: hidden
+    type: datetime_plain
+    weight: 4
+    settings:
+      timezone_override: ''
+    third_party_settings: {  }
+    region: content
+  field_exif_exposuremode:
+    label: hidden
+    type: text_default
+    weight: 14
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_exif_exposureprogram:
+    label: hidden
+    type: text_default
+    weight: 13
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_exif_exposuretime:
+    label: hidden
+    type: text_default
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_exif_flash:
+    label: hidden
+    type: text_default
+    weight: 12
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_exif_focallength:
+    label: hidden
+    type: text_default
+    weight: 11
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_exif_imagedescription:
+    label: hidden
+    type: text_default
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_exif_isospeedratings:
+    label: hidden
+    type: text_default
+    weight: 21
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_exif_keywords:
+    label: hidden
+    type: entity_reference_entity_id
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_exif_make:
+    label: hidden
+    type: text_default
+    weight: 8
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_exif_model:
+    label: hidden
+    type: entity_reference_entity_id
+    weight: 20
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_exif_orientation:
+    label: hidden
+    type: text_default
+    weight: 18
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_exif_scenecapturetype:
+    label: hidden
+    type: text_default
+    weight: 17
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_exif_title:
+    label: hidden
+    type: text_default
+    weight: 7
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_exif_whitebalance:
+    label: hidden
+    type: text_default
+    weight: 15
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_image:
+    label: hidden
+    type: image
+    weight: 0
+    settings:
+      image_style: large
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  uid:
+    label: hidden
+    type: author
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  name: true
+  thumbnail: true

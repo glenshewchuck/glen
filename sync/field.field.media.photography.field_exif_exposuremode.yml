@@ -1,0 +1,21 @@
+uuid: 1b53b7e1-4e1b-4413-926f-710e6fe671ad
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_exif_exposuremode
+    - media.type.photography
+  module:
+    - text
+id: media.photography.field_exif_exposuremode
+field_name: field_exif_exposuremode
+entity_type: media
+bundle: photography
+label: 'Exposure Mode'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

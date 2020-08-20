@@ -1,0 +1,99 @@
+uuid: 386e6409-738d-44e7-93e2-94d44749f06f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.only_image
+    - field.field.media.photography.field_exif_aperturefnumber
+    - field.field.media.photography.field_exif_author
+    - field.field.media.photography.field_exif_comments
+    - field.field.media.photography.field_exif_datetime
+    - field.field.media.photography.field_exif_exposuremode
+    - field.field.media.photography.field_exif_exposureprogram
+    - field.field.media.photography.field_exif_exposuretime
+    - field.field.media.photography.field_exif_flash
+    - field.field.media.photography.field_exif_focallength
+    - field.field.media.photography.field_exif_imagedescription
+    - field.field.media.photography.field_exif_isospeedratings
+    - field.field.media.photography.field_exif_keywords
+    - field.field.media.photography.field_exif_make
+    - field.field.media.photography.field_exif_model
+    - field.field.media.photography.field_exif_orientation
+    - field.field.media.photography.field_exif_scenecapturetype
+    - field.field.media.photography.field_exif_title
+    - field.field.media.photography.field_exif_whitebalance
+    - field.field.media.photography.field_image
+    - image.style.large
+    - media.type.photography
+  module:
+    - field_group
+    - image
+third_party_settings:
+  field_group:
+    group_photo_information:
+      children:
+        - uid
+        - field_exif_focallength
+        - field_exif_title
+        - field_exif_scenecapturetype
+        - field_exif_orientation
+        - field_exif_model
+        - field_exif_make
+        - field_exif_isospeedratings
+        - field_exif_imagedescription
+        - field_exif_flash
+        - created
+        - field_exif_exposuretime
+        - field_exif_exposureprogram
+        - field_exif_exposuremode
+        - field_exif_datetime
+        - field_exif_comments
+        - field_exif_author
+        - field_exif_aperturefnumber
+        - field_exif_whitebalance
+      parent_name: ''
+      weight: 4
+      format_type: fieldset
+      region: hidden
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+      label: 'Photo Information'
+id: media.photography.only_image
+targetEntityType: media
+bundle: photography
+mode: only_image
+content:
+  field_image:
+    label: hidden
+    type: image
+    weight: 0
+    settings:
+      image_style: large
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  field_exif_aperturefnumber: true
+  field_exif_author: true
+  field_exif_comments: true
+  field_exif_datetime: true
+  field_exif_exposuremode: true
+  field_exif_exposureprogram: true
+  field_exif_exposuretime: true
+  field_exif_flash: true
+  field_exif_focallength: true
+  field_exif_imagedescription: true
+  field_exif_isospeedratings: true
+  field_exif_keywords: true
+  field_exif_make: true
+  field_exif_model: true
+  field_exif_orientation: true
+  field_exif_scenecapturetype: true
+  field_exif_title: true
+  field_exif_whitebalance: true
+  name: true
+  thumbnail: true
+  uid: true

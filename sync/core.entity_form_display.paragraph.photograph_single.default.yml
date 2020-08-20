@@ -1,0 +1,24 @@
+uuid: d07e9faa-8f07-42f7-88d2-c7b9d7b0cead
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.photograph_single.field_image_main
+    - paragraphs.paragraphs_type.photograph_single
+  module:
+    - media_library
+id: paragraph.photograph_single.default
+targetEntityType: paragraph
+bundle: photograph_single
+mode: default
+content:
+  field_image_main:
+    type: media_library_widget
+    weight: 1
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true

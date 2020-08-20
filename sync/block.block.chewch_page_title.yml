@@ -1,0 +1,20 @@
+uuid: 94ba2476-b759-48af-b776-3c71916ed4e3
+langcode: en
+status: true
+dependencies:
+  theme:
+    - chewch
+_core:
+  default_config_hash: 1TQP4b3ZnlzvIH9bj6cpCz_SyUHdJjLQkZnHpikjjhw
+id: chewch_page_title
+theme: chewch
+region: header
+weight: 0
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

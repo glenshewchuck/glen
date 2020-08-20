@@ -1,0 +1,8 @@
+uuid: 402470bd-ef0c-480e-9dcc-0ad023c1b5a7
+langcode: en
+status: true
+dependencies: {  }
+id: chewch_node_date
+label: 'Chewch node date'
+locked: false
+pattern: 'M j, Y'

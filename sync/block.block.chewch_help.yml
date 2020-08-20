@@ -1,0 +1,22 @@
+uuid: 75f8f3dd-e8dc-48dc-bc19-0f5559d68d20
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - chewch
+_core:
+  default_config_hash: MhtNdV__HKRTab0ZPjkPNfYL4Ng4UPBucDLoC7Rg5Eo
+id: chewch_help
+theme: chewch
+region: help
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

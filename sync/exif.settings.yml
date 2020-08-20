@@ -1,0 +1,20 @@
+date_format_exif: null
+granularity: 0
+update_metadata: false
+write_empty_values: false
+extraction_solution: php_extensions
+exiftool_location: exiftool
+vocabulary: photographs_metadata
+mediatypes:
+  photography: photography
+  audio: '0'
+  document: '0'
+  image: '0'
+  remote_video: '0'
+  video: '0'
+nodetypes:
+  article: '0'
+  page: '0'
+filetypes: {  }
+_core:
+  default_config_hash: Ws80dA0r_3vsw6I-EIauGqduZJCloQeye3IRJ2ypW6E

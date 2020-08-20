@@ -1,0 +1,21 @@
+uuid: 9f25526b-c1be-40c7-8527-277cbb6c0cd4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_exif_isospeedratings
+    - media.type.photography
+  module:
+    - text
+id: media.photography.field_exif_isospeedratings
+field_name: field_exif_isospeedratings
+entity_type: media
+bundle: photography
+label: ISO
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

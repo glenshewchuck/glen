@@ -1,0 +1,28 @@
+uuid: a575dd42-5a56-4c36-9600-5b6940c9f311
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_image_main
+    - media.type.photography
+    - paragraphs.paragraphs_type.photograph_single
+id: paragraph.photograph_single.field_image_main
+field_name: field_image_main
+entity_type: paragraph
+bundle: photograph_single
+label: 'Image Main'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      photography: photography
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

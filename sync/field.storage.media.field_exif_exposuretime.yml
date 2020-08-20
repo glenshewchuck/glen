@@ -1,0 +1,20 @@
+uuid: a5ec955d-9f78-4c3e-9e3f-02794241876a
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+    - text
+id: media.field_exif_exposuretime
+field_name: field_exif_exposuretime
+entity_type: media
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

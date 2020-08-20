@@ -1,0 +1,32 @@
+uuid: 4533a4fe-f361-47f6-99de-6a4a4d3c86b3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.photograph_before_and_after.field_image_main
+    - field.field.paragraph.photograph_before_and_after.field_image_secondary
+    - paragraphs.paragraphs_type.photograph_before_and_after
+id: paragraph.photograph_before_and_after.default
+targetEntityType: paragraph
+bundle: photograph_before_and_after
+mode: default
+content:
+  field_image_main:
+    weight: 2
+    label: visually_hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_image_secondary:
+    type: entity_reference_entity_view
+    weight: 0
+    label: visually_hidden
+    settings:
+      view_mode: only_image
+      link: false
+    third_party_settings: {  }
+    region: content
+hidden: {  }

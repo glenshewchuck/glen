@@ -1,0 +1,21 @@
+uuid: f6b42b75-2d45-460d-9991-5c3f80ea1872
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_exif_comments
+    - media.type.photography
+  module:
+    - text
+id: media.photography.field_exif_comments
+field_name: field_exif_comments
+entity_type: media
+bundle: photography
+label: 'Photo Comment'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

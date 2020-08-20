@@ -1,0 +1,23 @@
+uuid: af28ff94-b7f3-4043-b6a2-c93eba3e80fd
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - chewch
+_core:
+  default_config_hash: F3d5hyAFunLh4PhGviJF019fHn1Z3_zy5gzsQ0tX1K0
+id: chewch_search
+theme: chewch
+region: sidebar_second
+weight: -1
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  provider: search
+  label_display: visible
+  page_id: ''
+visibility: {  }
